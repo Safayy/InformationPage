@@ -16,16 +16,25 @@ export default function Info() {
             <a className="info--website" href="https://safa.codes">
                 <p>safa.codes</p>
             </a>
-
             <div className="info--links">
-                <button href="https://www.linkedin.com/in/safa-yousif/" className="info--links--button info--links--button--email">
+                <button className="info--links--button info--links--button--email"
+                onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href='mailto://safa.yousif@outlook.com';
+                    }}
+                >
                     <FontAwesomeIcon icon={faEnvelope} />
                     <span>Email</span>    
                 </button> 
-                <button className="info--links--button info--links--button--linkedin">
+                <button className="info--links--button info--links--button--linkedin"
+                onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href='https://www.linkedin.com/in/safa-yousif/';
+                    }}
+                >
                     <FontAwesomeIcon icon={faLinkedin} />
                     <span>LinkedIn</span>    
-                </button>        {/*onClick="sendLinkedIn()"*/}
+                </button>
             </div>
         </div>
     )
