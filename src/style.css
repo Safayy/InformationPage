@@ -1,8 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Outfit:wght@100;300;400;600&display=swap');
+
 * {
     box-sizing: border-box;
-    background-color: blue;
-    color: red;
 }
 body {
-    color: red;
+    background-color: #23252C;
+    font-family: 'Inter', 'Outfit', sans-serif;
+    font-weight: 400;
+}
+.container {
+    border-radius: 12px;    
+    width: 70%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 44px;
+    color: white;
+    background-color: #1A1B21;
+}
+.info--picture {
+    margin: auto;
+    width: 100%;
+}
+.info--name {
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 3px;
+}
+.info--role {
+    color: #F3BF99;
+    font-size: 12.8px;
+    text-align: center;
+    line-height: 15px;;
+}
+.info--website {
+    font-size: 10.24px;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+.info--links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.info--links--button {
+    border-radius: 12px;
+    width: 40%;
+    height: 40px;
+    padding: 9px, 13px, 9px, 11px;
+    border-width: 0px;
+    font-size: 14px;
+}
+.info--links--button > span {
+    margin: 5px;
+}
+.info--links--button--email{
+    background-color: white;
+}
+.info--links--button--linkedin{
+    background-color: #5093E2;
+}
+.section {
+    padding: 15px;
+    padding-bottom: 0;
+}
+.section--heading {
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: bold;
+}
+.section--content {
+    color: #DCDCDC;
+    font-size: 10.24px;
+    line-height: 15.23px;
+}
+.footer{
+    background-color: #161619;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 23px;
+}
+
+.footer--social {
+    opacity: 0.3;
+    text-decoration: none;
+    color: white;
+}
+.footer--social:hover {
+    opacity: 1;
 }
